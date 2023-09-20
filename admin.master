@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+  <link href="Css/Home.css" rel="stylesheet" type="text/css" />  
+	<style type="text/css">
+        .link
+        {
+            margin:20px,20px,20px,20px;
+            }
+           .bimg
+          {
+              height:150px;
+              width:100%;
+              }
+    </style>
+         <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form2" runat="server" enctype="multipart/form-data">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<section>
+  <header>
+       
+    <div class="container">
+        <div class="logo">
+      <h1>Online Furniture Store</h1>
+    </div>
+   
+   
+    <nav class="nav">
+      <ul>
+      <li><a href="Default.aspx">Add Product </a></li>
+        <li><a href="ViewOrder.aspx">View Order</a></li>
+        <li><a href="Report.aspx">Delete Product</a></li>
+        <li><a href="Home.aspx">Logout</a></li>
+       
+      </ul>
+   </nav>
+ 
+    </div>
+  </header>
+  </section>        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+       
+        
+        </asp:ContentPlaceHolder>
+   <asp:ScriptManager ID="ScriptManager1" runat="server">
+     </asp:ScriptManager>
+
+     <asp:updateprogress associatedupdatepanelid="UpdatePanel1"
+        id="updateProgress" runat="server">
+         <progresstemplate>
+            <div id="processMessage" style=" background-image:url('../../Styles/ajax-loader3.gif'); width:100px; height:100px; background-repeat:no-repeat; background-position:center;">
+
+               </div>
+        </progresstemplate>
+    </asp:updateprogress> 
+
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+      <ContentTemplate>
+                   
+                </ContentTemplate>
+
+ </asp:UpdatePanel>
+    </form>
+</body>
+</html>

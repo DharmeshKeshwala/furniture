@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="furniture.master.cs" Inherits="furniture" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   <link href="Css/Home.css" rel="stylesheet" type="text/css" />
+   
+    <style type="text/css">
+        .link
+        {
+            margin:20px,20px,20px,20px;
+            }
+           .bimg
+          {
+              height:150px;
+              width:100%;
+              }
+    </style>
+         <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+<form id="form1" runat="server">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<section>
+  <header>
+       
+    <div class="container">
+        <div class="logo">
+      <h1>Online Furniture Store</h1>
+    </div>
+   
+   
+    <nav class="nav">
+      <ul>
+        <li><a href="Home.aspx" class="active-link">HOME</a></li>
+        <li><a href="Product.aspx">PRODUCT</a></li>
+        <li><a href="Login.aspx">LOGIN</a></li>
+        
+        <li><a href="Aboutus.aspx">ABOUT</a></li>
+         <li><a href="Adminlogin.aspx">ADMIN LOGIN</a></li>
+      </ul>
+   </nav>
+ 
+    </div>
+  </header>
+  </section>
+    
+  
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+       
+        
+        </asp:ContentPlaceHolder>
+   
+    </form>
+</body>
+</html>
